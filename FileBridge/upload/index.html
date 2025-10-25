@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileBridge - Dosya Transfer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📁 FileBridge</h1>
+            <p>FTTP Dosya Transfer Sitesi</p>
+        </header>
+
+        <nav class="page-tabs" aria-label="Sayfa sekmeleri">
+            <a class="tab active" aria-current="page">
+                <span class="tab-icon">⬆️</span>
+                <span class="tab-label">Dosya Yükle</span>
+            </a>
+            <a class="tab" href="../pool/indexpool.html">
+                <span class="tab-icon">📦</span>
+                <span class="tab-label">Dosya Havuzu</span>
+            </a>
+        </nav>
+
+        <main class="upload-section">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">☁️</div>
+                <h2>Dosyaları buraya sürükleyin</h2>
+                <p>veya</p>
+                <button class="btn-select" id="btnSelect">Dosya Seç</button>
+                <input type="file" id="fileInput" multiple hidden>
+                <span class="file-info">Maksimum 3GB</span>
+            </div>
+
+            <div class="file-list" id="fileList"></div>
+
+            <button class="btn-upload" id="btnUpload" disabled title="© 2025 Başkent Üniversitesi BİL499.">
+                Dosyaları Gönder
+            </button>
+            <div class="upload-note" id="uploadNote">© 2025 Başkent Üniversitesi BİL499.</div>
+        </main>
+
+        <footer>
+            <p>© 2025 FileBridge - Başkent Üniversitesi BİL499</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

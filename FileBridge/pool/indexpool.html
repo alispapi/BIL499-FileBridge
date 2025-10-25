@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileBridge Pool - Dosya Havuzu</title>
+    <link rel="stylesheet" href="stylepool.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 FileBridge Dosya Havuzu</h1>
+            <p>Yüklenen dosyaları görüntüle ve yönet</p>
+        </header>
+
+        <nav class="navigation">
+            <a href="../upload/index.html" class="nav-link">
+                ⬆️ Dosya Yükle
+            </a>
+            <a href="indexpool.html" class="nav-link active">
+                📦 Dosya Havuzu
+            </a>
+        </nav>
+
+        <main class="pool-section">
+            <!-- Arama ve Filtre -->
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="🔍 Dosya ara..."
+                    class="search-input"
+                >
+                <select id="filterType" class="filter-select">
+                    <option value="all">Tüm Dosyalar</option>
+                    <option value="image">Görseller</option>
+                    <option value="document">Dökümanlar</option>
+                    <option value="video">Videolar</option>
+                    <option value="other">Diğer</option>
+                </select>
+            </div>
+
+            <!-- İstatistikler -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon">📁</div>
+                    <div class="stat-info">
+                        <h3 id="totalFiles">0</h3>
+                        <p>Toplam Dosya</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💾</div>
+                    <div class="stat-info">
+                        <h3 id="totalSize">0 MB</h3>
+                        <p>Toplam Boyut</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-info">
+                        <h3 id="latestDate">-</h3>
+                        <p>Son Yükleme</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dosya Listesi -->
+            <div class="files-header">
+                <h2>Dosya Havuzu</h2>
+                <button class="btn-clear" id="btnClearAll">
+                    🗑️ Tümünü Temizle
+                </button>
+            </div>
+
+            <div class="files-container" id="filesContainer">
+                <!-- Dosyalar JavaScript ile yüklenecek -->
+            </div>
+
+            <!-- Boş Durum -->
+            <div class="empty-state" id="emptyState">
+                <div class="empty-icon">📭</div>
+                <h3>Henüz dosya yüklenmemiş</h3>
+                <p>Dosya yüklemek için yukarıdaki butonu kullanın</p>
+                <a href="../upload/index.html" class="btn-upload-link">Dosya Yükle</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Başkent Üniversitesi BİL499</p>
+        </footer>
+    </div>
+
+    <script src="scriptpool.js"></script>
+</body>
+</html>
