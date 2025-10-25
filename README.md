@@ -9,6 +9,8 @@ BIL499 FileBridge FTTP File Transfer Project
 4) "upload" klasörünün içine "index.html", "style.css" ve "script.js" dosyalarını atın.
 5) "pool" klasörünün içine "indexpool.html", "stylepool.css" ve "scriptpool.js" dosyalarını atın.
 
+------------------------------------------------------------------------------------------------------------------------------------------
+
 Örnek Dosya Mimarisi:
 📁 FileBridge
 │
